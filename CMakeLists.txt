@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.14)
 
 project(crosssi LANGUAGES CXX)
 
@@ -14,4 +14,4 @@ set(BUILD_TESTING OFF)
 
 add_executable(${PROJECT_NAME} "main.cpp" "qml.qrc")
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
-target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Quick signalrclient)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt6::Core Qt6::Quick signalrclient)
