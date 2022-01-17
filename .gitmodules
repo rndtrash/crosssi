@@ -1,0 +1,4 @@
+[submodule "external/signalr-client"]
+	path = external/signalr-client
+	url = https://github.com/aspnet/SignalR-Client-Cpp
+	ignore = dirty
