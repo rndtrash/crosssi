@@ -25,9 +25,8 @@ jobs:
       
     steps:
     - uses: actions/checkout@v2
-    
-    - name: Checkout submodules
-      uses: textbook/git-checkout-submodule-action@master
+      with:
+        submodules: 'recursive'
     
     - name: Install Qt
       uses: jurplel/install-qt-action@v2.14.0
