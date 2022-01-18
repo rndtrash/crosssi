@@ -16,11 +16,12 @@ add_subdirectory("external/signalr-client")
 add_executable(
     ${PROJECT_NAME}
     "main.cpp"
+
     "qml.qrc"
     )
 qt_add_qml_module(
     ${PROJECT_NAME}
-    URI ts.crosssi
+    URI ${PROJECT_NAME}
     VERSION 1.0
     )
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)

@@ -3,5 +3,6 @@
         <file>main.qml</file>
         <file>MainMenu.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>Settings.qml</file>
     </qresource>
 </RCC>
